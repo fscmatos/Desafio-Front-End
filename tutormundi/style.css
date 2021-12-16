@@ -61,11 +61,8 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.clicado {
-    background-color: #2CC6D0;
-}
 
-
+/* responsividade */
 @media screen and (max-width: 1060px) {
     .book {
         left: 50%;
@@ -82,16 +79,16 @@ h1 {
     .btn2 { width:40%; left: 50%;}
     img { max-width: 100%; height: auto; }
 }
-
+/* moto g4 */
 @media screen and (max-width: 768px) {
     .book {
-        left: 35%;
+        left: 37%;
     }
     .rating {
         left: 25%;
     }
     h1 {
-        left: 10%;
+        left: 12%;
     }
     .btn {
         left: 10%;
@@ -105,7 +102,6 @@ h1 {
 @media only screen
   and (min-device-width : 768px)
   and (max-device-width : 1024px)
-  and (orientation:portrait) 
 {
     .book {
         left: 45%;
@@ -128,5 +124,30 @@ h1 {
     h1 {
         left: 3%;
     }
+    .rating {
+        left: 20%;
+    }
+    .book {
+        left: 35%;
+    }
 }
-
+/* Galaxy Fold */
+@media screen and (max-width: 300px) {
+    h1 {
+        left: 0%;
+    }
+}
+/* surface duo */
+@media screen 
+    and (min-width: 500px) 
+    and (max-width:768px) {
+    h1 {
+        left: 25%;
+    }
+    .book {
+        left: 42%;
+    }
+    .rating {
+        left: 35%;
+    }
+}
