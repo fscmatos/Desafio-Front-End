@@ -3,7 +3,6 @@ const ratingStars = [...document.getElementsByClassName("rating_star")];
 function executeRating(stars) {
   const starClassActive = "rating_star active";
   const starClassInactive = "rating_star inactive";
-  const confirmClicked = "clicado";
   const starsLength = stars.length;
   let i;
   stars.map((star) => {
@@ -14,7 +13,6 @@ function executeRating(stars) {
       } else {
         for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
       }
-    document.getElementByClass("btn2").className = "confirmClicked";
     };
   });
 }
